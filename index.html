@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Retro cars</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <script src="index.js"></script>
+
+        <script src="https://unpkg.com/react/umd/react.development.js"></script>
+        <script src="https://unpkg.com/react-dom/umd/react-dom.development.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.26.0/babel.min.js"></script>
+
+        <script crossorigin src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
+        <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
+        <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+        <script src="clock.js" type="text/babel"></script>
+        <script type="text/babel" src="counter.js"></script>
+    </head>
+
+    <body>
+        <main>
+            <section class="hero">
+                <h1>
+                    Карачун Анастасія, КМ-02
+                </h1>
+                <p>
+                    Проект на тему: Ретро автомобілі
+                </p>
+
+                <div>
+                    <ul id="logged_in">
+                        <li>
+                            <h3 id="logged_in_name"></h3>
+                        </li>
+                        <li>
+                            <h3 id="logged_in_lastname"></h3>
+                        </li>
+                        <li><button onclick="log_out()" id="logout_button" class="cta"
+                                style="visibility: hidden;">Вийти</button></li>
+                    </ul>
+                    <ul>
+                        <li><a href="login.html" id="login_button" class="cta" style="margin-right: 1%;">Вхід</a></li>
+                        <li><a href="register.html" id="register_button" class="cta">Реєстрація</a></li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="services">
+                <h3>Компоненти на реакті :)</h3>
+                <div id="root"></div><br><br>
+                <h2>Київський час</h2>
+                <div class="clock" id="clock"></div><br><br>
+                <h2>Марки автомобілів</h2>
+                <ul>
+                    <li><button onclick="to_mercedes_benz()">Mercedes-Benz</button></li>
+                    <li><button onclick="to_peugeot()">Peugeot</button></li>
+                    <li><button onclick="to_renault()">Renault</button></li>
+                    <li><button onclick="to_opel()">Opel</button></li>
+                </ul>
+                <ul>
+                    <li><button onclick="to_rolls_royce()">Rolls-Royce</button></li>
+                    <li><button onclick="to_cadillac()">Cadillac</button></li>
+                    <li><button onclick="to_ford()">Ford</button></li>
+                    <li><button onclick="to_fiat()">Fiat</button></li>
+                </ul>
+            </section>
+        </main>
+    </body>  
+
+    <footer>
+        <p>Карачун Анастасія, КМ-02, Telegram: @a_karachun</p>
+    </footer>
+</html>
